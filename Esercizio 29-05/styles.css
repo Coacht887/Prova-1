@@ -1,0 +1,56 @@
+/* Stile Generale */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background-color:yellowgreen;
+    color: black;
+    
+}
+ header{ margin: 35px 35px 0 35px;
+    
+    }
+    main{margin: 0 35px ;}
+/* Stile per il titolo */
+h1 {
+    text-align: center;
+    color: blue;
+    font-size: 70px;
+    text-align: center; position: relative;
+}
+/* Stile per il menu */
+nav {
+    background-color: #f0cd05;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+a:hover {
+        color: red;
+    }
+
+    /* Stile per il contenuto */
+.notizia_1, .notizia_2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.titolo_1, .titolo_2 {
+    color: darkblue;
+}
+div {
+    width: 200px;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 6px dotted red;
+  margin: 20px;
+}
+/* Footer */
+footer {
+    background-color: #f0cd05;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    
+    
+    width: 100%;
+}
