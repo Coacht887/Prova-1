@@ -60,3 +60,7 @@ const descrizione = (nome, eta) => {
     return `Mi chiamo ${nome} e ho ${eta} anni.`;
 }
 console.log(descrizione("Alice", 30)); // Stampa "Mi chiamo Alice e ho 30 anni."
+
+// Esempio di Interazione con l’utente
+let nome = prompt("Inserisci il tuo nome:");
+alert(`Ciao ${nome}! Benvenuto!`);

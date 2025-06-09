@@ -2,6 +2,7 @@
 const sottrazione = (a, b) => a - b;
 const somma = (a, b) => a + b;
 const eseguiOperazione = (a, b, operazione) => operazione(a, b);
+
 console.log(eseguiOperazione(10, 5, sottrazione)); // Stampa 5
 console.log(eseguiOperazione(10, 5, somma)); // Stampa 15
 
@@ -17,3 +18,4 @@ const saluta = (lingua = "IT") => {
 // Esempio
 saluta("IT");
 saluta("EN"); 
+saluta("FR"); // Stampa "Lingua non supportata."
