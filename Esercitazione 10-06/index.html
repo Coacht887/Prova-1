@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id=" inputText" ploaceholder="Scrivi qualcosa...">
+    <button>Submit</button>
+</body>
+<script>
+    const inputText = document.getElementById('inputText');
+
+    //Aggiungo un evento al click del bottone
+    const button = document.querySelector('button');
+    button.addEventListenerA("click", () => {
+        //Controllo se l'input è vuoto
+        if (inputText.value.trim() === "") {
+            alert('Per favore, inserisci un testo.');
+        } else {
+            //Se non è vuoto, cambio il contenuto dell'input
+            inputUtente.innerHTML = inputText.value;
+        }
+    });
+</script>
+</html>

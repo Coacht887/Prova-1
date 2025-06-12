@@ -19,7 +19,7 @@ function aggiungiElemento() {
 
 function aggiornaLista() {
     let ul = document.getElementById("lista");
-    ul.innerHTML = "";
+    ul.innerHTML = ""; // Pulisce la lista esistente 
 
     listaSpesa.forEach((elemento, index) => {
         let li = document.createElement("li");
