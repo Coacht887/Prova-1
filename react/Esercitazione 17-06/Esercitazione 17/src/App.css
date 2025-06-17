@@ -1,33 +1,54 @@
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+/* Layout responsive dei prodotti */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+
 .product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  width: 300px;
-  font-family: sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .product-title {
   font-size: 1.2rem;
-  margin: 12px 0 6px;
+  margin: 0 0 8px;
+  color: #333;
 }
 
 .product-description {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #666;
+  margin-bottom: 10px;
 }
 
 .product-price {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #1a73e8;
   margin: 10px 0;
 }
@@ -36,12 +57,58 @@
   background-color: #1a73e8;
   color: #fff;
   border: none;
-  padding: 10px 16px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 6px;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
 }
 
 .buy-button:hover {
-  background-color: #155ab6;
+  background-color: #0c57c3;
+}
+
+/* Tag styles */
+.tag-list-container {
+  text-align: center;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #e0ecff;
+  color: #1a73e8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.tag.more {
+  background-color: #d1e3ff;
+  color: #0c57c3;
+  font-style: italic;
+}
+.product-list {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr; /* default: 1 per riga */
+}
+
+@media (min-width: 600px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
