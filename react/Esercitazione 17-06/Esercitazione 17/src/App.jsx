@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import ProductCard from './components/ProductCard.jsx';
-import './App.css'
-import shopping from './assets/shopping.webp'
+import {getAllProducts} from './data/products.js';
 
-const sampleProduct = {
-  title: 'Auricolari Bluetooth Noise Cancelling',
-  description: 'Qualità audio eccezionale, cancellazione attiva del rumore e durata di 24h.',
-  price: 89.99,
-  image: shopping
-};
+import ProductCard from './components/ProductCard.jsx';
+import './App.css';
 
 const App = () => {
+  const products = getAllProducts();
   return (
     <div style={{ padding: '2rem' }}>
-      <ProductCard product={sampleProduct} />
+      {products.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+
     </div>
   );
 };
